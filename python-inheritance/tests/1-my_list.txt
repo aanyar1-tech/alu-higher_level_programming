@@ -38,3 +38,13 @@ An empty MyList prints sorted as an empty list:
     >>> empty_list = MyList()
     >>> empty_list.print_sorted()
     []
+
+Works correctly with negative numbers appended out of order:
+
+    >>> neg_list = MyList()
+    >>> neg_list.append(3)
+    >>> neg_list.append(-5)
+    >>> neg_list.append(0)
+    >>> neg_list.append(-1)
+    >>> neg_list.print_sorted()
+    [-5, -1, 0, 3]
