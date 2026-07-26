@@ -9,7 +9,7 @@ class BaseGeometry:
         """Raise an Exception since area() is not implemented here."""
         raise Exception("area() is not implemented")
 
-    def integer_validator(self, name="name", value=0):
+    def integer_validator(self, name="name", value=None):
         """Validate that value is an integer greater than 0.
 
         Args:
